@@ -27,8 +27,9 @@
       background-color: #1c1c1c;
 
       .hero-title {
-          font-weight: 34px;
+          font-weight: bold;
           margin-bottom: 30px;
+          font-size: 25px;
       }
 
       .hero-subtitle {
@@ -50,8 +51,21 @@
       padding: 0;
   }
 
+  p {
+      line-height: 1.6;
+      font-size: 17px;
+
+  }
+
   .container {
       padding: 20px;
+      background-color: #EEF0EB;
+  }
+
+  .card {
+      border: 1px solid grey;
+      margin: 10px;
+      background-color: #F4F9E9;
   }
 
   .navbar>ul {
@@ -63,6 +77,7 @@
   .navbar {
       display: flex;
       justify-content: space-between;
+
   }
 
 
@@ -72,7 +87,9 @@
 
   .navbar-links {
       padding: 5px;
+      margin: 0 10px;
   }
+
 
 
   /* FOOTER */
@@ -80,6 +97,7 @@
       margin-top: auto;
       width: 100%;
       border: 1px solid black;
+
   }
 
   /* MEDIA QUERIES */

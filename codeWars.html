@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <title>Bootcamp diaries</title>
+</head>
+
+<body>
+
+    <main class="main">
+
+
+        <!-- Header -->
+        <header class="header">
+
+            <nav class="navbar">
+                <span class="logo">
+                    <img src="logoImage.png" height="30px" width="30px" />
+                </span>
+
+                <ul class="navbar-content">
+                    <li class="navbar-links"><a href="index.html">Home</a></li>
+                    <li class="navbar-links"><a href="week1.html">Week 1</a></li>
+                    <li class="navbar-links"><a href="week2.html">Week 2</a></li>
+                    <li class="navbar-links"><a href="codeWars.html">Coding challenge websites</a></li>
+                    <li class="navbar-links"><a href="jobSkills.html">Employability Skills</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-left">
+
+                <h1 class="hero-title">Codewars</h1>
+                <p class="hero-subtitle"></p>
+
+
+
+            </div>
+
+            <!-- <div class="hero-right">
+
+                <img src="codeimage.jpeg" />
+            </div> -->
+
+        </section>
+
+        <div class="container">
+
+            <section class="content">
+
+
+                <p>To enhance our learning experience, we were advised to register on
+                    Codewars. It is a platform designed for software developers to improve their javascript abilities
+                    through
+                    various challenges. This site offers a multitude (yes, I checked) of coding katas with varying
+                    levels of
+                    difficulty, ranging from 8 (the easiest) to 1 (the most challenging). I challenged myself to
+                    complete at
+                    least one kata every day and even formed a group with my peers - the competitive side in me enjoyed
+                    this
+                    secretly. Each successfully completed kata earns you points on Codewars' scoring system. Not only
+                    does
+                    it serve as a fantastic way to practice javascript, but it also helps develop problem-solving
+                    skills.
+                    Their motto "Achieve mastery through challenge" was motivating and made the whole experience
+                    engaging
+                    and fun. This led me to explore other websites that catered towards beginners such as Edabit,
+                    Exercism,
+                    HackerRank and Advent of Code - which I will be utilising to help me level up my problem-solving
+                    skills.
+                    One thing I found extremely beneficial while working on a kata was being able to check out other
+                    coders'
+                    solutions. It was great to see how different people approached the same problem and it helped me
+                    broaden
+                    my problem-solving skills. Plus, I could do some extra research on the methods they used and gain
+                    new
+                    insights that helped me write more efficient code. Sometimes, I realized that I was overcomplicating
+                    things by writing too many lines of code or creating unnecessary variables. Seeing others' solutions
+                    made me realize there are simpler and more effective ways to achieve the same result.<br><br>
+                    function positiveSum(arr) { <br>
+                    if (arr.length === 0){ <br>
+                    return 0;<br>
+                    };<br>
+                    let posSum = 0;<br>
+                    for(let i = 0; i <= arr.length; i++){ if (arr[i]> 0){<br>
+                        posSum += arr[i];<br>
+                        };<br>
+                        };<br>
+                        return posSum;<br>
+                        };<br><br>
+
+                        The above is a challenge I solved on Codewars where you get an array of numbers and return the
+                        sum
+                        of all of the positive ones e.g. Example [1,-4,7,12] => 1 + 7 + 12 = 20. In my solution, I check
+                        if
+                        the input array is empty and returns 0 if it is. I then create a variable called possum and set
+                        it
+                        to 0, this is to keep track of the positive sum. I then wrote a loop to go through each element
+                        of
+                        the array one by one. Inside the loop, if the element is greater than 0 (positive) it gets added
+                        to
+                        posSum. After going through all the elements the total is returned.<br><br>
+                        Here is a solution another user used:<br><br>
+                        function positiveSum(arr) {<br>
+                        return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);<br>
+                        }<br><br>
+                        The kata is solved here in a more concise way using the reduce function. JavaScript reduce() is
+                        a
+                        higher-order function used in data manipulation that reduces an array to a single value. It
+                        takes
+                        two parameters: an accumulator and the current element of an array. Its uses include calculating
+                        the
+                        sum or product of all elements, finding the maximum and minimum value, flattening an array, and
+                        more. Also, the reduce function automatically returns 0 for an empty array. This is an example
+                        of
+                        Codewars being great for exposure to more efficient and easier-to-read code.
+
+
+
+                </p>
+
+        </div>
+        </section>
+
+
+        </section>
+
+
+        </section>
+
+        </div>
+
+
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Contact us</p>
+            <p>Terms and Conditions</p>
+            <p>Social Media Links</p>
+        </footer>
+    </main>
+
+
+
+
+</body>
+
+
+</html lang="en">
