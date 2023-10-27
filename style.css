@@ -259,9 +259,9 @@ header ul.is-sticky li a.active {
 
 #article-cards .card {
     width: 32%;
-    background: #f0f0f0;
+    background: #e5dada;
     margin-bottom: 2rem;
-    border-radius: 0.25rem;
+
 }
 
 #article-cards .card img {
