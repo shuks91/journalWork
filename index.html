@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -6,121 +7,172 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="./style.css" rel="stylesheet">
-    <title>Bootcamp diaries</title>
+    <title>Bootcamp Diaries</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
 </head>
 
 <body>
 
-    <main class="main">
+    <!-- HEADER -->
+    <div id="header-hero-container">
+        <header>
+            <div class="flex container">
+                <a src="/images/logoImage.png" id="logo" href="index.html" alt="Logo image"></a>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
 
+                    <ul id="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="week1.html">Week 1</a></li>
+                        <li><a href="week2.html">Week 2</a></li>
+                        <li><a href="codeWars.html">Coding Challenge Websites</a></li>
+                        <li><a href="jobSkills.html">Employability Skills</a></li>
 
-        <!-- Header -->
-        <header class="header">
-
-            <nav class="navbar">
-                <span class="logo">
-                    <img src="logoImage.png" height="30px" width="30px" />
-                </span>
-
-                <ul class="navbar-content">
-                    <li class="navbar-links"><a href="index.html">Home</a></li>
-                    <li class="navbar-links"><a href="week1.html">Week 1</a></li>
-                    <li class="navbar-links"><a href="week2.html">Week 2</a></li>
-                    <li class="navbar-links"><a href="codeWars.html">Coding challenge websites</a></li>
-                    <li class="navbar-links"><a href="jobSkills.html">Employability Skills</a></li>
-                </ul>
-            </nav>
+                        <li id="close-flyout"><span class="fas fa-times"></span></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <!-- Hero -->
-        <section class="hero">
-            <div class="hero-left">
+        <section id="hero">
+            <div class="fade">
+                <div class="hero-text">
+                    <h1>BOOTCAMP DIARIES</h1>
+                    <p>Hi and welcome to my first webpage. I'm an aspiring front-end
+                        developer. This is where I'll be documenting my journey on The Growth Company's 11 week
+                        Skills Bootcamp in
+                        Software
+                        Development. I'll be posting what I have learnt and my progress on the course. So far we have
+                        been
+                        concentraing
+                        on Javascript, HTML and CSS. Journal entries will be posted for each week. Happy reading!</p>
 
-                <h1 class="hero-title">BOOTCAMP DIARIES</h1>
-                <p class="hero-subtitle">This is where I'll be documenting my journey on The Growth Company's 11 week
-                    Skills Bootcamp in
-                    Software
-                    Development. I'll be posting what I have learnt and my progress on the course. So far we have
-                    been
-                    concentraing
-                    on Javascript, HTML and CSS. Journal entries will be posted for each week. Happy reading!</p>
+                    <a class="bootcamp-link"
+                        href="https://www.gceducationandskills.ac.uk/all-courses/skills-bootcamp-in-software-development/">Growth
+                        Company Bootcamp details</a>
 
-                <a href="https://www.gceducationandskills.ac.uk/all-courses/skills-bootcamp-in-software-development/">Growth
-                    Company
-                    Bootcamp details</a>
+
+                </div>
             </div>
-
-            <div class="hero-right">
-
-                <img src="codeimage.jpeg" />
-            </div>
-
         </section>
+    </div>
 
+
+    <section id="article-cards">
         <div class="container">
+            <h2>Coding Chronicles</h2>
+            <p class="large-paragraph">Read about my experience</p>
 
-            <section class="content">
+            <div class="flex">
+                <div class="card">
+                    <img src="/images/codeImage.jpeg" alt="JavaScript image" />
+                    <h3>Week 1 - JavaScript Fundamentals</h3>
+                    <p>Posted on October 19, 2023</p>
+                    <p><a href="week1.html">Journal entry for week 1</a></p>
 
+                </div>
 
-                <section id="cards">
-                    <div class="cards-container">
+                <div class="card">
+                    <img src="/images/html.jpeg" alt="html image" />
+                    <h3>Week 2 - HTML & CSS</h3>
+                    <p>Posted on October 22, 2023</p>
+                    <p><a href="week2.html">Journal entry for week 2</a></p>
 
-                        <div class="card">
-                            <h3>Week 1</h3>
-                            <p class="blog-post-date">October 19, 2023</p>
-                            <p class="label">Journal entry for Week 1</p>
-                            <a href="#">JavaScript Fundamentals</a>
-                        </div>
+                </div>
 
-                        <div class="card">
-                            <h3>Week 2</h3>
-                            <p class="blog-post-date">October 22, 2023</p>
-                            <p class="label">Journal entry for Week 2</p>
-                            <a href="#">HTML & CSS</a>
-                        </div>
+                <div class="card">
+                    <img src="/images/cvImage.jpg" alt="Codewars image" />
+                    <h3>Week 1 & 2 - Getting prepared for the job market</h3>
+                    <p>Posted on October 23, 2023</p>
+                    <p><a href="week2.html">Journal entry for week 1 & 2</a></p>
+                </div>
 
-                        <div class="card">
-                            <h3>Week 2</h3>
-                            <p class="blog-post-date">October 25, 2023</p>
-                            <p class="label">Learning by doing</p>
-                            <a href="#">Codewars</a>
-                        </div>
-
-                        <div class="card">
-                            <h3>Week 1 & 2</h3>
-                            <p class="blog-post-date">October 25, 2023</p>
-                            <p class="label">Getting prepared for the job market</p>
-                            <a href="#">Employability Skills</a>
-                        </div>
-
-                    </div>
-                </section>
-
-
-            </section>
-
-
-            </section>
-
+                <div class="card">
+                    <img src="/images/codewarsImage.png" alt="CV image" />
+                    <h3>Codewars (Learning by doing on coding challenge websites)</h3>
+                    <p>Posted on October 25, 2023</p>
+                    <p><a href="codeWars.html">Journal entry for week 3</a></p>
+                </div>
+            </div>
         </div>
+    </section>
 
+    <!-- FOOTER -->
+    <footer>
+        <div class="flex container">
+            <div class="footer-about">
+                <h5>About me</h5>
+                <p>Hello, I'm Shuks. I'm currently enrolled in a full-time software boot camp, working towards
+                    transitioning into a career in technology. Follow me on social media for more details and keep an
+                    eye out for my latest blog posts. </p>
+            </div>
 
+            <div class="footer-follow">
+                <h5 class="follow-us">Follow Me</h5>
+                <ul>
+                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <small>Copyright &copy; 2023 All rights reserved</small>
+    </footer>
 
+    <script>
+        $(function () {
+            let headerElem = $('header');
+            let logo = $('#logo');
+            let navMenu = $('#nav-menu');
+            let navToggle = $('#nav-toggle');
 
+            navToggle.on('click', () => {
+                navMenu.css('right', '0');
+            });
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>Contact us</p>
-            <p>Terms and Conditions</p>
-            <p>Social Media Links</p>
-        </footer>
-    </main>
+            $('#close-flyout').on('click', () => {
+                navMenu.css('right', '-100%');
+            });
 
+            $(document).on('click', (e) => {
+                let target = $(e.target);
+                if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
+                    navMenu.css('right', '-100%');
+                }
+            });
 
+            $(document).scroll(() => {
+                let scrollTop = $(document).scrollTop();
 
+                if (scrollTop > 0) {
+                    navMenu.addClass('is-sticky');
+                    logo.css('color', '#000');
+                    headerElem.css('background', '#fff');
+                    navToggle.css('border-color', '#000');
+                    navToggle.find('.strip').css('background-color', '#000');
+                } else {
+                    navMenu.removeClass('is-sticky');
+                    logo.css('color', '#fff');
+                    headerElem.css('background', 'transparent');
+                    navToggle.css('bordre-color', '#fff');
+                    navToggle.find('.strip').css('background-color', '#fff');
+                }
 
+                headerElem.css(scrollTop >= 200 ? { 'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #999' } : { 'padding': '1rem 0', 'box-shadow': 'none' });
+            });
+
+            $(document).trigger('scroll');
+        });
+    </script>
 </body>
 
-
-</html lang="en">
+</html>

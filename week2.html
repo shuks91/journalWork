@@ -6,140 +6,174 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="./style.css" rel="stylesheet">
-    <title>Bootcamp diaries</title>
+    <title>Bootcamp Diaries</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
 </head>
 
 <body>
+    <!-- HEADER -->
+    <div id="header-hero-container">
+        <header>
+            <div class="flex container">
+                <a src="/images/logoImage.png" id="logo" href="index.html" alt="Logo image"></a>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
 
-    <main class="main">
+                    <ul id="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="week1.html">Week 1</a></li>
+                        <li><a href="week2.html">Week 2</a></li>
+                        <li><a href="codeWars.html">Coding Challenge Websites</a></li>
+                        <li><a href="jobSkills.html">Employability Skills</a></li>
 
-
-        <!-- Header -->
-        <header class="header">
-
-            <nav class="navbar">
-                <span class="logo">
-                    <img src="logoImage.png" height="30px" width="30px" />
-                </span>
-
-                <ul class="navbar-content">
-                    <li class="navbar-links"><a href="index.html">Home</a></li>
-                    <li class="navbar-links"><a href="week1.html">Week 1</a></li>
-                    <li class="navbar-links"><a href="week2.html">Week 2</a></li>
-                    <li class="navbar-links"><a href="codeWars.html">Coding challenge websites</a></li>
-                    <li class="navbar-links"><a href="jobSkills.html">Employability Skills</a></li>
-                </ul>
-            </nav>
+                        <li id="close-flyout"><span class="fas fa-times"></span></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <!-- Hero -->
-        <section class="hero">
-            <div class="hero-left">
-
-                <h1 class="hero-title">My second week</h1>
-                <p class="hero-subtitle"></p>
-
-
+        <section id="hero">
+            <div class="fade">
+                <div class="hero-text">
+                    <h1>Week 2</h1>
+                    <h2>HTML & CSS</h2>
+                </div>
             </div>
-
-            <!-- <div class="hero-right">
-
-                <img src="codeimage.jpeg" />
-            </div> -->
-
         </section>
+    </div>
 
+
+    <section id="week2">
         <div class="container">
-
-            <section class="content">
-
-
+            <div>
                 <p>As an aspiring front-end web developer, I was brimming with excitement to venture into the realm of
                     website building and design. While I had dabbled in basic Python and JavaScript, HTML & CSS were
-                    uncharted territory for me. The prospect of delving into this space was exciting.<br><br>
-                    HTML: <br>
-                    HTML, the cornerstone of web development, is the language that breathes structure into web pages. It
-                    lays the very foundation upon which every website is built. From defining headings and paragraphs to
-                    crafting lists, it forms the scaffolding of content. Moreover, it serves as a canvas for embedding
-                    multimedia, from images that tell stories to links that connect worlds.<br>
-                    CSS: <br>
-                    With CSS (Cascading Style Sheets), I unlocked the power to make webpages not only functional but
-                    also visually appealing. It's the tool that styles text, backgrounds, and outlines borders. Through
-                    Flexbox, I researched elements, how to arrange them in rows, creating visually appealing
-                    layouts.<br>
-                    Semantic HTML: <br>
-                    This phase was more than just about code; it was about understanding the principles of web
-                    development. Semantic HTML, the building blocks of the digital world. I was starting to understand
-                    the reason and purpose of using semantic tags in HTML was to organize the script based on the
-                    meaning of the HTML element rather than how it looks.<br>
-                    Responsive Design: <br>
-                    A website's ability to look impeccable- regardless of the device is very important. Responsive
-                    design was the key to achieving this. With media queries, I learned to adapt layouts seamlessly,
-                    ensuring images scaled gracefully and content flowed harmoniously across phones, tablets, and
-                    desktops.<br><br>
-                    This week has been a whirlwind journey through the essentials of front-end development. With
-                    continued practice and honing of these skills, I'm looking forward to creating great web experiences
-                    and unlocking more potential when we come to include JavaScript.
-
-
-
-
+                    uncharted territory for me. The prospect of delving into this space was exciting.
                 </p>
 
+                <h3>HTML:</h3>
+                <p>HTML, the cornerstone of web development, is the language that breathes structure into web pages. It
+                    lays the very foundation upon which every website is built. From defining headings and paragraphs to
+                    crafting lists, it forms the scaffolding of content. Moreover, it serves as a canvas for embedding
+                    multimedia, from images that tell stories to links that connect worlds.
+                </p>
+
+                <h3>CSS:</h3>
+                <p>With CSS (Cascading Style Sheets), I unlocked the power to make webpages not only functional but
+                    also visually appealing. It's the tool that styles text, backgrounds, and outlines borders. Through
+                    Flexbox, I researched elements, how to arrange them in rows, creating visually appealing
+                    layouts.
+                </p>
+
+                <h3>Semantic HTML:</h3>
+                <p>This phase was more than just about code; it was about understanding the principles of web
+                    development. Semantic HTML, the building blocks of the digital world. I was starting to understand
+                    the reason and purpose of using semantic tags in HTML was to organize the script based on the
+                    meaning of the HTML element rather than how it looks.
+                </p>
+
+                <h3>Responsive Design: </h3>
+                <p>A website's ability to look impeccable- regardless of the device is very important. Responsive
+                    design was the key to achieving this. With media queries, I learned to adapt layouts seamlessly,
+                    ensuring images scaled gracefully and content flowed harmoniously across phones, tablets, and
+                    desktops.
+                </p>
+
+                <p>By the conclusion of the second week, I had honed my skills in crafting HTML and CSS within the VS
+                    Code environment. I adeptly incorporated images and employed CSS techniques to customize the font
+                    and background. Our assigned task was to design a website tailored for composing journal entries,
+                    complete with fitting stylistic elements. The due date for this project was set for October 27th.
+                    So far it's been a whirlwind journey through the essentials of front-end development. With
+                    continued practice and honing of these skills, I'm looking forward to creating great web experiences
+                    and unlocking more potential when we come to include JavaScript.
+                </p>
+            </div>
         </div>
-        </section>
 
-
-        </section>
-
-
-        </section>
 
         </div>
+    </section>
 
+    <!-- FOOTER -->
+    <footer>
+        <div class="flex container">
+            <div class="footer-about">
+                <h5>About me</h5>
+                <p>Hello, I'm Shuks. I'm currently enrolled in a full-time software boot camp, working towards
+                    transitioning into a career in technology. Follow me on social media for more details and keep an
+                    eye out for my latest blog posts. </p>
+            </div>
 
+            <div class="footer-follow">
+                <h5 class="follow-us">Follow Me</h5>
+                <ul>
+                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                </ul>
+            </div>
+        </div>
 
+    </footer>
 
+    <script>
+        $(function () {
+            let headerElem = $('header');
+            let logo = $('#logo');
+            let navMenu = $('#nav-menu');
+            let navToggle = $('#nav-toggle');
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>Contact us</p>
-            <p>Terms and Conditions</p>
-            <p>Social Media Links</p>
-        </footer>
-    </main>
+            navToggle.on('click', () => {
+                navMenu.css('right', '0');
+            });
 
+            $('#close-flyout').on('click', () => {
+                navMenu.css('right', '-100%');
+            });
 
+            $(document).on('click', (e) => {
+                let target = $(e.target);
+                if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
+                    navMenu.css('right', '-100%');
+                }
+            });
 
+            $(document).scroll(() => {
+                let scrollTop = $(document).scrollTop();
 
-</body>
+                if (scrollTop > 0) {
+                    navMenu.addClass('is-sticky');
+                    logo.css('color', '#000');
+                    headerElem.css('background', '#fff');
+                    navToggle.css('border-color', '#000');
+                    navToggle.find('.strip').css('background-color', '#000');
+                } else {
+                    navMenu.removeClass('is-sticky');
+                    logo.css('color', '#fff');
+                    headerElem.css('background', 'transparent');
+                    navToggle.css('bordre-color', '#fff');
+                    navToggle.find('.strip').css('background-color', '#fff');
+                }
 
+                headerElem.css(scrollTop >= 200 ? { 'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #999' } : { 'padding': '1rem 0', 'box-shadow': 'none' });
+            });
 
-</html lang="en">
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 2</title>
-    <p>Week 2: HTML & CSS Adventure
-        Week 2 marked the beginning of a new chapter in my coding journey as we delved into the world of HTML and CSS.
-        HTML is the language that gives structure to web pages. I learned how to piece the elements of HTML together
-        which form the skeleton of a webpage.
-
-    </p>
-</head>
-
-<body>
-
+            $(document).trigger('scroll');
+        });
+    </script>
 </body>
 
 </html>
+
+</html> ang">
+
+</html> ang">

@@ -6,98 +6,171 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="./style.css" rel="stylesheet">
-    <title>Bootcamp diaries</title>
+    <title>Bootcamp Diaries</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
 </head>
 
 <body>
 
-    <main class="main">
+    <!-- HEADER -->
+    <div id="header-hero-container">
+        <header>
+            <div class="flex container">
+                <a src="/images/logoImage.png" id="logo" href="index.html" alt="Logo image"></a>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
 
+                    <ul id="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="week1.html">Week 1</a></li>
+                        <li><a href="week2.html">Week 2</a></li>
+                        <li><a href="codeWars.html">Coding Challenge Websites</a></li>
+                        <li><a href="jobSkills.html">Employability Skills</a></li>
 
-        <!-- Header -->
-        <header class="header">
-
-            <nav class="navbar">
-                <span class="logo">
-                    <img src="logoImage.png" height="30px" width="30px" />
-                </span>
-
-                <ul class="navbar-content">
-                    <li class="navbar-links"><a href="index.html">Home</a></li>
-                    <li class="navbar-links"><a href="week1.html">Week 1</a></li>
-                    <li class="navbar-links"><a href="week2.html">Week 2</a></li>
-                    <li class="navbar-links"><a href="codeWars.html">Coding challenge websites</a></li>
-                    <li class="navbar-links"><a href="jobSkills.html">Employability Skills</a></li>
-
-                </ul>
-            </nav>
+                        <li id="close-flyout"><span class="fas fa-times"></span></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <!-- Hero -->
-        <section class="hero">
-            <div class="hero-left">
+        <section id="hero">
+            <div class="fade">
+                <div class="hero-text">
+                    <h1>Employability Skills
+                    </h1>
 
-                <h1 class="hero-title">Preparing for the job market</h1>
-                <p class="hero-subtitle"></p>
-
-
-
+                </div>
             </div>
-
-            <!-- <div class="hero-right">
-
-                <img src="codeimage.jpeg" />
-            </div> -->
-
         </section>
+    </div>
 
+    <section id="employability-skills">
         <div class="container">
-
-            <section class="content">
-
-
-                <p>During our boot camp, I am grateful to have an employability tutor available to us. Every week, we
-                    cover topics that are crucial for honing skills and increasing our chances of securing a job in the
-                    industry. In our first session, we discussed more than just job titles and salaries - it prompted me
-                    to think about elements like company ethos and values aligning with my own. It's essential for me to
+            <div class="flex">
+                <p>For the duration of the boot camp we have an employability tutor available to us. Every week, we
+                    cover topics that will increase our chances of securing a job in the
+                    industry. In our first session we discussed job titles and salaries - it prompted me
+                    to think about how I would like a companies ethos and values to align with my own. It's essential
+                    for me to
                     work in a place that has a positive culture and sparks my passion and interest.<br><br>
 
                     We also talked about how to make the most of the upcoming weeks in boot camp while still maintaining
-                    balance in our daily lives. Let's face it, software boot camps can be intense with a heavy workload
-                    and high expectations. That's why it's important to be kind to yourself emotionally and mentally
-                    during this time. Personally, I remind myself of my motivation for signing up, stay committed, do my
-                    best, and maintain good habits throughout the course.
+                    balance in our daily lives. Software boot camps can be intense with a heavy workload
+                    and high expectations. That's why i'm working on being kind to myself emotionally and mentally
+                    during this time. Personally, what helps is to remind myself of my motivations for signing up, stay
+                    committed, do my
+                    best, and try to maintain good habits throughout the course.<br><br>
 
+                    Collectively, we delved into the components of a compelling CV, how to capture a recruiter's
+                    attention, the significance of a recent and relevant CV and incorporating noteworthy personal
+                    accomplishments. Discovering that a CV typically garners a mere 8 seconds of scrutiny was both
+                    enlightening and startling. This emphasises the importance of making those initial moments count.
+                    Before the next session I am going to rework my CV with a focus on what I want prospective
+                    recruiters to notice first. A
+                    key takeaway I noted was to explore the available templates on Canva for inspiration.<br>
+
+                    We also touched on tailoring cover letters to a specific role and organisation. Perusing the
+                    company's website and leveraging the job description makes for a cover letter that will increase the
+                    odds of being shortlisted.<br><br>
+
+                    As someone who has been out of the job market for a few years taking an
+                    in-depth look into how to approach job hunting has increased my confidence.<br><br>
+
+                    Things i'll be thinking about and reviewing after each week:<br><br>
+                    • Career Options and Job Hunting<br><br>
+                    • Confidence<br><br>
+                    • Goal Setting<br><br>
+                    • Future Focus<br><br>
+                    • Self-awareness<br><br>
+                    <br>
                 </p>
-
+            </div>
         </div>
-        </section>
+    </section>
 
 
-        </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="flex container">
+            <div class="footer-about">
+                <h5>About me</h5>
+                <p>Hello, I'm Shuks. I'm currently enrolled in a full-time software boot camp, working towards
+                    transitioning into a career in technology. Follow me on social media for more details and keep an
+                    eye out for my latest blog posts. </p>
+            </div>
 
 
-        </section>
 
+            <div class="footer-follow">
+                <h5 class="follow-us">Follow Me</h5>
+                <ul>
+                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                </ul>
+            </div>
         </div>
 
+        <small>
+            Copyright &copy; 2023 All rights reserved
+        </small>
+    </footer>
 
+    <script>
+        $(function () {
+            let headerElem = $('header');
+            let logo = $('#logo');
+            let navMenu = $('#nav-menu');
+            let navToggle = $('#nav-toggle');
 
+            navToggle.on('click', () => {
+                navMenu.css('right', '0');
+            });
 
+            $('#close-flyout').on('click', () => {
+                navMenu.css('right', '-100%');
+            });
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>Contact us</p>
-            <p>Terms and Conditions</p>
-            <p>Social Media Links</p>
-        </footer>
-    </main>
+            $(document).on('click', (e) => {
+                let target = $(e.target);
+                if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
+                    navMenu.css('right', '-100%');
+                }
+            });
 
+            $(document).scroll(() => {
+                let scrollTop = $(document).scrollTop();
 
+                if (scrollTop > 0) {
+                    navMenu.addClass('is-sticky');
+                    logo.css('color', '#000');
+                    headerElem.css('background', '#fff');
+                    navToggle.css('border-color', '#000');
+                    navToggle.find('.strip').css('background-color', '#000');
+                } else {
+                    navMenu.removeClass('is-sticky');
+                    logo.css('color', '#fff');
+                    headerElem.css('background', 'transparent');
+                    navToggle.css('bordre-color', '#fff');
+                    navToggle.find('.strip').css('background-color', '#fff');
+                }
 
+                headerElem.css(scrollTop >= 200 ? { 'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #999' } : { 'padding': '1rem 0', 'box-shadow': 'none' });
+            });
 
+            $(document).trigger('scroll');
+        });
+    </script>
 </body>
 
-
-</html lang="en">
+</html>

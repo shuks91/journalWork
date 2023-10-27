@@ -7,55 +7,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="./style.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
     <title>Bootcamp diaries</title>
 </head>
 
 <body>
 
-    <main class="main">
+    <!-- HEADER -->
+    <div id="header-hero-container">
+        <header>
+            <div class="flex container">
+                <a src="/images/logoImage.png" id="logo" href="index.html" alt="Logo image"></a>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
 
+                    <ul id="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="week1.html">Week 1</a></li>
+                        <li><a href="week2.html">Week 2</a></li>
+                        <li><a href="codeWars.html">Coding Challenge Websites</a></li>
+                        <li><a href="jobSkills.html">Employability Skills</a></li>
 
-        <!-- Header -->
-        <header class="header">
-
-            <nav class="navbar">
-                <span class="logo">
-                    <img src="logoImage.png" height="30px" width="30px" />
-                </span>
-
-                <ul class="navbar-content">
-                    <li class="navbar-links"><a href="index.html">Home</a></li>
-                    <li class="navbar-links"><a href="week1.html">Week 1</a></li>
-                    <li class="navbar-links"><a href="week2.html">Week 2</a></li>
-                    <li class="navbar-links"><a href="codeWars.html">Coding challenge websites</a></li>
-                    <li class="navbar-links"><a href="jobSkills.html">Employability Skills</a></li>
-                </ul>
-            </nav>
+                        <li id="close-flyout"><span class="fas fa-times"></span></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <!-- Hero -->
-        <section class="hero">
-            <div class="hero-left">
-
-                <h1 class="hero-title">Codewars</h1>
-                <p class="hero-subtitle"></p>
-
-
-
+        <section id="hero">
+            <div class="fade">
+                <div class="hero-text">
+                    <h1>Coding Challenge Websites</h1>
+                </div>
             </div>
-
-            <!-- <div class="hero-right">
-
-                <img src="codeimage.jpeg" />
-            </div> -->
-
         </section>
+    </div>
 
+
+
+    <section id="codewars">
         <div class="container">
-
-            <section class="content">
-
-
+            <div>
                 <p>To enhance our learning experience, we were advised to register on
                     Codewars. It is a platform designed for software developers to improve their javascript abilities
                     through
@@ -69,7 +67,7 @@
                     does
                     it serve as a fantastic way to practice javascript, but it also helps develop problem-solving
                     skills.
-                    Their motto "Achieve mastery through challenge" was motivating and made the whole experience
+                    Their tagline "Achieve mastery through challenge" was motivating and made the whole experience
                     engaging
                     and fun. This led me to explore other websites that catered towards beginners such as Edabit,
                     Exercism,
@@ -84,75 +82,118 @@
                     insights that helped me write more efficient code. Sometimes, I realized that I was overcomplicating
                     things by writing too many lines of code or creating unnecessary variables. Seeing others' solutions
                     made me realize there are simpler and more effective ways to achieve the same result.<br><br>
-                    function positiveSum(arr) { <br>
-                    if (arr.length === 0){ <br>
-                    return 0;<br>
-                    };<br>
-                    let posSum = 0;<br>
-                    for(let i = 0; i <= arr.length; i++){ if (arr[i]> 0){<br>
-                        posSum += arr[i];<br>
-                        };<br>
-                        };<br>
-                        return posSum;<br>
-                        };<br><br>
 
-                        The above is a challenge I solved on Codewars where you get an array of numbers and return the
-                        sum
-                        of all of the positive ones e.g. Example [1,-4,7,12] => 1 + 7 + 12 = 20. In my solution, I check
-                        if
-                        the input array is empty and returns 0 if it is. I then create a variable called possum and set
-                        it
-                        to 0, this is to keep track of the positive sum. I then wrote a loop to go through each element
-                        of
-                        the array one by one. Inside the loop, if the element is greater than 0 (positive) it gets added
-                        to
-                        posSum. After going through all the elements the total is returned.<br><br>
-                        Here is a solution another user used:<br><br>
-                        function positiveSum(arr) {<br>
-                        return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);<br>
-                        }<br><br>
-                        The kata is solved here in a more concise way using the reduce function. JavaScript reduce() is
-                        a
-                        higher-order function used in data manipulation that reduces an array to a single value. It
-                        takes
-                        two parameters: an accumulator and the current element of an array. Its uses include calculating
-                        the
-                        sum or product of all elements, finding the maximum and minimum value, flattening an array, and
-                        more. Also, the reduce function automatically returns 0 for an empty array. This is an example
-                        of
-                        Codewars being great for exposure to more efficient and easier-to-read code.
+                    <img src="images/codeSolution.png"><br><br>
+
+                    The above is a challenge I solved on Codewars where you get an array of
+                    numbers and return the sum of all of the positive ones e.g. Example [1,-4,7,12]=> 1 + 7 + 12 = 20.
+                    In my solution, I check
+                    if
+                    the input array is empty and returns 0 if it is. I then create a variable called posSum and set
+                    it
+                    to 0, this is to keep track of the positive sum. I then wrote a loop to go through each element
+                    of
+                    the array one by one. Inside the loop, if the element is greater than 0 (positive) it gets added
+                    to
+                    posSum. After going through all the elements the total is returned.<br><br>
+
+                    <img src="images/altCodeSolution.png"> <br><br>
 
 
-
+                    The kata is solved here in a more concise way using the reduce function.
+                    JavaScript reduce() is a higher-order function used in data manipulation that reduces an array to a
+                    single value. It takes two parameters: an accumulator and the current element of an array. Its uses
+                    include calculating the sum or product of all elements, finding the maximum and minimum value,
+                    flattening an array, and more. Also, the reduce function automatically returns 0 for an empty
+                    array.<br><br> This is an
+                    example
+                    of
+                    Codewars being great for exposure to more efficient and easier-to-read code. My current score on
+                    Codewars is 60. My goal is to attempt at least one kata every day.<br><br>
                 </p>
 
-        </div>
-        </section>
+                <p>Click below to go to the codewars website</p>
+                <a href="https://www.codewars.com/">
+                    <img src="images/codewarsImage.png">
+                </a>
 
-
-        </section>
-
-
-        </section>
-
+            </div>
         </div>
 
+        </div>
+    </section>
 
+    <!-- FOOTER -->
+    <footer>
+        <div class="flex container">
+            <div class="footer-about">
+                <h5>About me</h5>
+                <p>Hello, I'm Shuks. I'm currently enrolled in a full-time software boot camp, working towards
+                    transitioning into a career in technology. Follow me on social media for more details and keep an
+                    eye out for my latest blog posts. </p>
+            </div>
 
+            <div class="footer-follow">
+                <h5 class="follow-us">Follow Me</h5>
+                <ul>
+                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                </ul>
+            </div>
+        </div>
 
+        <small>
+            Copyright &copy; 2023 All rights reserved
+        </small>
+    </footer>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>Contact us</p>
-            <p>Terms and Conditions</p>
-            <p>Social Media Links</p>
-        </footer>
-    </main>
+    <script>
+        $(function () {
+            let headerElem = $('header');
+            let logo = $('#logo');
+            let navMenu = $('#nav-menu');
+            let navToggle = $('#nav-toggle');
 
+            navToggle.on('click', () => {
+                navMenu.css('right', '0');
+            });
 
+            $('#close-flyout').on('click', () => {
+                navMenu.css('right', '-100%');
+            });
 
+            $(document).on('click', (e) => {
+                let target = $(e.target);
+                if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
+                    navMenu.css('right', '-100%');
+                }
+            });
 
+            $(document).scroll(() => {
+                let scrollTop = $(document).scrollTop();
+
+                if (scrollTop > 0) {
+                    navMenu.addClass('is-sticky');
+                    logo.css('color', '#000');
+                    headerElem.css('background', '#fff');
+                    navToggle.css('border-color', '#000');
+                    navToggle.find('.strip').css('background-color', '#000');
+                } else {
+                    navMenu.removeClass('is-sticky');
+                    logo.css('color', '#fff');
+                    headerElem.css('background', 'transparent');
+                    navToggle.css('bordre-color', '#fff');
+                    navToggle.find('.strip').css('background-color', '#fff');
+                }
+
+                headerElem.css(scrollTop >= 200 ? { 'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #999' } : { 'padding': '1rem 0', 'box-shadow': 'none' });
+            });
+
+            $(document).trigger('scroll');
+        });
+    </script>
 </body>
 
-
-</html lang="en">
+</html>

@@ -6,136 +6,211 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="./style.css" rel="stylesheet">
-    <title>Bootcamp diaries</title>
+    <title>Bootcamp Diaries</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
 </head>
 
 <body>
 
-    <main class="main">
+    <!-- HEADER -->
+    <div id="header-hero-container">
+        <header>
+            <div class="flex container">
+                <a src="/images/logoImage.png" id="logo" href="index.html" alt="Logo image"></a>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
 
+                    <ul id="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="week1.html">Week 1</a></li>
+                        <li><a href="week2.html">Week 2</a></li>
+                        <li><a href="codeWars.html">Coding Challenge Websites</a></li>
+                        <li><a href="jobSkills.html">Employability Skills</a></li>
 
-        <!-- Header -->
-        <header class="header">
-
-            <nav class="navbar">
-                <span class="logo">
-                    <img src="logoImage.png" height="30px" width="30px" />
-                </span>
-
-                <ul class="navbar-content">
-                    <li class="navbar-links"><a href="index.html">Home</a></li>
-                    <li class="navbar-links"><a href="week1.html">Week 1</a></li>
-                    <li class="navbar-links"><a href="week2.html">Week 2</a></li>
-                    <li class="navbar-links"><a href="codeWars.html">Coding challenge websites</a></li>
-                    <li class="navbar-links"><a href="jobSkills.html">Employability Skills</a></li>
-                </ul>
-            </nav>
+                        <li id="close-flyout"><span class="fas fa-times"></span></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <!-- Hero -->
-        <section class="hero">
-            <div class="hero-left">
-
-                <h1 class="hero-title">My first Week</h1>
-                <p class="hero-subtitle"></p>
-
-
+        <section id="hero">
+            <div class="fade">
+                <div class="hero-text">
+                    <h1>Week 1</h1>
+                    <h2>JavaScript Fundamentals</h2>
+                </div>
             </div>
-
-            <!-- <div class="hero-right">
-
-                <img src="codeimage.jpeg" />
-            </div> -->
-
         </section>
+    </div>
 
+    <section id="week1">
         <div class="container">
+            <div>
+                <p>On October 9th, I embarked on the boot camp journey, diving headfirst into a week dedicated to
+                    mastering JavaScript fundamentals. During this initial week, I had the pleasure of meeting my tutors
+                    and fellow boot campers. Through introductions and casual conversations, we began to forge
+                    connections and get acquainted. Despite my initial nervousness, the warm welcome and the realisation
+                    that we were all navigating this new terrain together provided a reassuring sense of unity.<br><br>
 
-            <section class="content">
+                </p>
 
-
-                <p>
-                    Day 1: Dot Notation & Data Types<br>
-                    We explored Dot Notation and Data Types. Dot Notation is a way to interact with objects, enabling us
+                <h3>Day 1: Dot Notation & Data Types</h3>
+                <p>We explored Dot Notation and Data Types. Dot Notation is a way to interact with objects, enabling us
                     to read,
                     modify, and invoke properties. Data Types are the values we instruct the computer to work with, such
                     as numbers,
                     strings, and booleans.
                     By the end of day 1, I created a nifty random number generator program. It was amazing that with
                     just one line
-                    of code, I could conjure up random numbers effortlessly.<br><br>
+                    of code, I could get random numbers effortlessly.
+                </p>
 
-                    Day 2: Variable Exploration and Naming Conventions<br>
+                <h3>Day 2:</h3>
+                <p>Variable Exploration and Naming Conventions
                     Day 2 was an adventure in variables. I learned how they store different types of data and how to
                     manipulate
                     them. We covered the various ways to declare a variable and the art of JavaScript naming
                     conventions.
                     It felt like I was handed a toolkit of endless possibilities. The more I experimented, the more I
                     realized the
-                    potential in my code.<br><br>
-
-                    Day 3: If Else Statements<br>
-                    Day 3 was all about adding logic to our code. We dove into the world of If-Else statements, giving
-                    our programs
-                    the power to make decisions.
-                    Using Comparison Operators, I practised making my code perform different actions for different
-                    decisions.
-                    I first practised making a program with a single condition and then crafted a program using multiple
-                    conditions,
-                    making the code execute different moves depending on the situation.
-                    Comparison operators and logical operators<br><br>
-
-                    Day 4: Arrays/Loops<br>
-                    Day 4 we studied arrays and objects: Manipulating arrays, accessing object properties, and using
-                    built-in
-                    methods. Going through loops was eye-opening, in JavaScript one line can be written to repeat a task
-                    based on a
-                    condition automatically a certain number of times. <br><br>
-
-                    Day 5: JS Tasks<br>
-                    Day 5 brought forth an exciting challenge: completing JavaScript tasks in pairs. It was a good
-                    opportunity to
-                    put our newly acquired knowledge to the test and apply the concepts we had learned throughout the
-                    week. Teaming
-                    up with a fellow boot camper we tackled the challenges together. We shared insights, compared code,
-                    and
-                    complemented each other's strengths. As we worked through the challenges, I could feel a sense of
-                    accomplishment
-                    with every problem solved.<br><br>
-
-                    This first week was a whirlwind of learning, and I'm eagerly anticipating what's in store for the
-                    upcoming
-                    weeks. Learning JavaScript has proven to be quite an exciting ride!
-
+                    potential in my code.
                 </p>
 
+                <h3>Day 3: If Else Statements</h3>
+                <p>
+                    Day 3 was all about adding logic to our code. We dove into the world of If-Else statements,
+                    giving
+                    our programs
+                    the power to make decisions.
+                    Using Comparison Operators, I practised making my code perform different actions for
+                    different
+                    decisions.
+                    I first practised making a program with a single condition and then crafted a program using
+                    multiple
+                    conditions,
+                    making the code execute different moves depending on the situation.
+                    Comparison operators and logical operators
+                </p>
+
+                <h3>Day 4: Arrays/Loops</h3>
+                <p>Day 4 we studied arrays and objects: Manipulating arrays, accessing object properties, and
+                    using
+                    built-in
+                    methods. Going through loops was eye-opening, in JavaScript one line can be written to
+                    repeat a
+                    task
+                    based on a
+                    condition automatically a certain number of times.
+                </p>
+
+                <h3> Day 5: JS Tasks</h3>
+                <p>Day 5 brought forth an exciting challenge: completing JavaScript tasks in pairs. It was a
+                    good
+                    opportunity to
+                    put our newly acquired knowledge to the test and apply the concepts we had learned
+                    throughout
+                    the
+                    week. Teaming
+                    up with a fellow boot camper we tackled the challenges together. We shared insights,
+                    compared
+                    code,
+                    and
+                    complemented each other's strengths. As we worked through the challenges, I could feel a
+                    sense
+                    of
+                    accomplishment
+                    with every problem solved.
+                </p>
+
+                <p>This first week was a whirlwind of learning, and I'm eagerly anticipating what's in store for
+                    the
+                    upcoming
+                    weeks. Learning JavaScript has proven to be quite an exciting ride!
+                </p>
+            </div>
         </div>
-        </section>
+    </section>
 
 
-        </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="flex container">
+            <div class="footer-about">
+                <h5>About me</h5>
+                <p>Hello, I'm Shuks. I'm currently enrolled in a full-time software boot camp, working towards
+                    transitioning into a career in technology. Follow me on social media for more details and keep an
+                    eye out for my latest blog posts. </p>
+            </div>
 
-
-        </section>
-
+            <div class="footer-follow">
+                <h5 class="follow-us">Follow Me</h5>
+                <ul>
+                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                </ul>
+            </div>
         </div>
 
+        <small>
+            Copyright &copy; 2023 All rights reserved
+        </small>
+    </footer>
 
+    <script>
+        $(function () {
+            let headerElem = $('header');
+            let logo = $('#logo');
+            let navMenu = $('#nav-menu');
+            let navToggle = $('#nav-toggle');
 
+            navToggle.on('click', () => {
+                navMenu.css('right', '0');
+            });
 
+            $('#close-flyout').on('click', () => {
+                navMenu.css('right', '-100%');
+            });
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>Contact us</p>
-            <p>Terms and Conditions</p>
-            <p>Social Media Links</p>
-        </footer>
-    </main>
+            $(document).on('click', (e) => {
+                let target = $(e.target);
+                if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
+                    navMenu.css('right', '-100%');
+                }
+            });
 
+            $(document).scroll(() => {
+                let scrollTop = $(document).scrollTop();
 
+                if (scrollTop > 0) {
+                    navMenu.addClass('is-sticky');
+                    logo.css('color', '#000');
+                    headerElem.css('background', '#fff');
+                    navToggle.css('border-color', '#000');
+                    navToggle.find('.strip').css('background-color', '#000');
+                } else {
+                    navMenu.removeClass('is-sticky');
+                    logo.css('color', '#fff');
+                    headerElem.css('background', 'transparent');
+                    navToggle.css('bordre-color', '#fff');
+                    navToggle.find('.strip').css('background-color', '#fff');
+                }
 
+                headerElem.css(scrollTop >= 200 ? { 'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #999' } : { 'padding': '1rem 0', 'box-shadow': 'none' });
+            });
 
+            $(document).trigger('scroll');
+        });
+    </script>
 </body>
 
 </html>
